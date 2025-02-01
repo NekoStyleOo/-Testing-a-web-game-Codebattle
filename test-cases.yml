@@ -197,7 +197,7 @@
   prerequisites:
     Открыта страница https://codebattle.hexlet.io/#lobby; Пользователь авторизован в сети;
   test-data: |
-    Выбираем любую игру из лобби
+    Выбираем любую игру в процессе из лобби
   steps:
     - Подлючаемся к игре
   expected-result: |
