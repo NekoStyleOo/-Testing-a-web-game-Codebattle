@@ -12,7 +12,7 @@
 
 - summary: |
     Успешная авторизация пользователя через Discord
-  status: failс
+  status: fail
 
 - summary: |
     Проверка входа пользователя с существующими email и password
@@ -108,4 +108,4 @@
 
 - summary: |
     Проверка возможности просматривать записи
-  status: pass
+  status: fail
