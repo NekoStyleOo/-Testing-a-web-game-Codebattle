@@ -445,3 +445,16 @@
     - Нажимаем Show
   expected-result: |
     Пользователь попадает на страницу с записью решений других игроков
+
+- summary: |
+    Проверка настройки времени игры 
+  requirement: |
+    Пользователь должен иметь возможность регулировать время игры
+  prerequisites:
+    Открыта страница https://codebattle.hexlet.io/#lobby; Пользователь авторизован в сети;
+  test-data: |
+    Level - 4; Game Type - With a bot; Time control -3 min; Choose task by name or tags - random;
+  steps:
+    - Выбираем Create battle
+  expected-result: |
+    Пользователь играет в игру с установленными параметрами
