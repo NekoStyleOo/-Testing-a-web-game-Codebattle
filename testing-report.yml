@@ -1,0 +1,111 @@
+- summary: |
+    Тестируемые поля регистрации email и password
+  status: pass
+
+- summary: |
+    Успешная регистрация пользователя
+  status: pass
+
+- summary: |
+    Успешная регистрация пользователя через Github
+  status: pass
+
+- summary: |
+    Успешная авторизация пользователя через Discord
+  status: failс
+
+- summary: |
+    Проверка входа пользователя с существующими email и password
+  status: pass
+
+- summary: |
+    Проверка входа пользователя с несуществующими email и password
+  status: pass
+
+- summary: |
+    Создание игры без регистрации
+  status: pass
+
+- summary: |
+    Создание игры в режиме (With other user)
+  status: pass
+
+- summary: |
+    Создание игры в режиме (With a friend)
+  status: pass
+
+- summary: |
+    Создание игры в режиме (With a bot)
+  status: pass
+
+- summary: |
+    Подключение к игре через лобби
+  status: pass
+
+- summary: |
+    Проверка чата в лобби
+  status: pass
+
+- summary: |
+    Проверка чата в режиме (direct message)
+  status: pass
+
+- summary: |
+    Проверка подлючения к игре как зритель
+  status: pass
+
+- summary: |
+    Проверяем возможность решить задачу
+  status: pass
+
+- summary: |
+    Проверяем возможность решить задачу неправильно
+  status: pass
+
+- summary: |
+    Завершение игры по истечению времени
+  status: fail
+
+- summary: |
+    Завершение игры по кнопке Give up
+  status: pass
+
+- summary: |
+     Проверка переключения двух языков — русского на английский
+  status: pass
+  
+- summary: |
+    Проверка переключения двух языков —  английского на русский
+  status: pass
+
+- summary: |
+    Проверка функции Show guide
+  status: fail
+
+- summary: |
+    Проверка функции смены языка программирования
+  status: pass
+
+- summary: |
+    Проверка рейтинговой системы
+  status: pass
+
+- summary: |
+    Проверка возможности просматривать рейтинг других пользователей за всё время
+  status: pass
+
+- summary: |
+    Проверка возможности просматривать рейтинг других пользователей за месяц
+  status: pass
+
+- summary: |
+    Проверка возможности просматривать рейтинг других пользователей за неделю
+  status: pass
+
+- summary: |
+    Проверка создания турниров
+  status: pass
+
+- summary: |
+    Проверка возможности просматривать записи
+  status: pass
