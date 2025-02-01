@@ -19,7 +19,7 @@
   prerequisites:
     Открыта страница регистрации
   test-data: |
-    Nickname: test
+    Nickname: test_1234
     Password: password
     E-mail: ilona@mail.ru
   steps:
