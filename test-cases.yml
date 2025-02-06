@@ -201,7 +201,7 @@
   steps:
     - Подлючаемся к игре
   expected-result: |
-    Пользователь видит интерфейс игры других игроков
+    Пользователь видит интерфейс игры других игроков, а так же не может ничего менять в игре и мешать участникам
 
 - summary: |
     Проверяем возможность решить задачу 
@@ -445,3 +445,127 @@
     - Нажимаем Show
   expected-result: |
     Пользователь попадает на страницу с записью решений других игроков
+
+- summary: |
+    Успешное изменение Your name
+  requirement: |
+    Пользователь должен иметь возможность изменение имени
+  prerequisites:
+     Пользователь авторизован в сети; Открыта страница https://codebattle.hexlet.io/settings
+  test-data: |
+    NULL
+  steps:
+    - В поле “Your name” ввести 'Элдорадо'
+    - Нажимаем Save
+    - Обновляем страницу F5
+  expected-result: |
+    Изменено имя пользователя. Настройки сохраняются без ошибок.
+
+- summary: |
+     Успешное изменение Your weapon
+  requirement: |
+    Пользователь должен иметь возможность изменять свое оружие
+  prerequisites:
+    Пользователь авторизован в сети; Открыта страница https://codebattle.hexlet.io/settings;
+  test-data: |
+    NULL
+  steps:
+    - В поле 'Your weapon' выбрать другую опцию из выпадающего списка на "Go"
+    - Нажимаем Save
+  expected-result: |
+    Изменено Your weapon пользователя. Настройки сохраняются без ошибок.
+
+- summary: |
+     Проверка изменения настроек Your weapon
+  requirement: |
+    После изменения настроек Your weapon, в созданной игре по умолчанию присваевается новое значение
+  prerequisites:
+    Пользователь авторизован в сети; Открыта страница https://codebattle.hexlet.io/#lobby;
+  test-data: |
+    NULL
+  steps:
+    - Нажимаем Create a game
+    - Выбираем With a bot
+    - Нажимаем кнопку Create battle
+  expected-result: |
+    Созданная игра соответствует всем выбранным настройкам.
+
+- summary: |
+     Успешное изменение Your clan
+  requirement: |
+    Пользователь должен иметь возможность изменять ваш клан
+  prerequisites:
+    Пользователь авторизован в сети; Открыта страница https://codebattle.hexlet.io/settings;
+  test-data: |
+    NULL
+  steps:
+    - В поле 'Your clan' ввести "Космос"
+    - Нажимаем Save
+    - Обновляем страницу F5
+  expected-result: |
+    Изменено Your clan пользователя. Настройки сохраняются без ошибок.
+
+- summary: |
+     Успешное изменение Select sound type (CS)
+  requirement: |
+    Пользователь должен иметь возможность изменять Select sound type
+  prerequisites:
+    Пользователь авторизован в сети; Открыта страница https://codebattle.hexlet.io/settings;
+  test-data: |
+    NULL
+  steps:
+    - Выбираем CS
+    - Нажимаем Save
+    - Обновляем страницу F5
+  expected-result: |
+    Изменено Select sound type на CS. Настройки сохраняются без ошибок.
+
+- summary: |
+     Успешное изменение Select sound type (Standard)
+  requirement: |
+    Пользователь должен иметь возможность изменять Select sound type
+  prerequisites:
+    Пользователь авторизован в сети; Открыта страница https://codebattle.hexlet.io/settings;
+  test-data: |
+    NULL
+  steps:
+    - Выбираем Standard
+    - Нажимаем Save
+    - Обновляем страницу F5
+  expected-result: |
+    Изменено Select sound type на Standard. Настройки сохраняются без ошибок.
+
+- summary: |
+     Успешное изменение Select sound type (Silent)
+  requirement: |
+    Пользователь должен иметь возможность изменять Select sound type
+  prerequisites:
+    Пользователь авторизован в сети; Открыта страница https://codebattle.hexlet.io/settings;
+  test-data: |
+    NULL
+  steps:
+    - Выбираем Silent
+    - Нажимаем Save
+    - Обновляем страницу F5
+  expected-result: |
+    Изменено Select sound type на Silent. В игре выключен звук. Настройки сохраняются без ошибок.
+
+- summary: |
+    Проверка корректности работы функции выбора уровня звука (Select sound level)
+  requirement: |
+    Пользователь должен иметь возможность изменять Select sound level
+  prerequisites:
+    Пользователь авторизован в сети; Открыта страница https://codebattle.hexlet.io/settings;
+  test-data: |
+    Select sound type - Dendy, Select sound level уставвлен на 5\10
+  steps:
+    - Выбираем ползунок для выбора уровня звука
+    - Уставналяваем его на 0\10
+    - Слушаем громкость
+    - Выбираем ползунок для выбора уровня звука
+    - Уставналяваем его на 10\10
+    - Слушаем громкость
+    - Нажимаем Save
+    - Обновляем страницу F5
+  expected-result: |
+    Перемещение ползунка в промежуточные позиции корректно изменяет уровень звука. Настройки сохраняются без ошибок.
