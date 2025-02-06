@@ -20,5 +20,5 @@ non-functional:
 implicit:
   - Пользователь имеет возможность подключиться к игре до ее завершения
   - Сайт с возможность обратной связи
-  - Пользователь имеет возможность настроить свой профиль(Your name, Your weapon, Your clan, Select sound type (Dendy CSS tandard Silent), Select sound level) 
+  - Пользователь имеет возможность настроить свой профиль(Your name, Your weapon, Your clan, Select sound type (Dendy CS tandard Silent), Select sound level) 
   - Эксплуатация сайта должна соответствовать требованиям законодательства РФ
