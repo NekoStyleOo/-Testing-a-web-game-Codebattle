@@ -109,3 +109,35 @@
 - summary: |
     Проверка возможности просматривать записи
   status: fail
+
+- summary: |
+    Успешное изменение Your name
+  status: pass
+
+- summary: |
+    Успешное изменение Your weapon
+  status: pass
+
+- summary: |
+    Проверка изменения настроек Your weapon
+  status: pass
+
+- summary: |
+    Успешное изменение Your clan
+  status: pass
+
+- summary: |
+    Успешное изменение Select sound type (CS)
+  status: pass
+
+- summary: |
+    Успешное изменение Select sound type (Standard)
+  status: pass
+
+- summary: |
+    Успешное изменение Select sound type (Silent)
+  status: pass
+
+- summary: |
+    Проверка корректности работы функции выбора уровня звука (Select sound level)
+  status: pass
